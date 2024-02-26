@@ -88,22 +88,42 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-.perfume {
-  display: block;
-  width: auto;
-}
-body {
-  background-color: hsl(158, 36%, 37%);
-  font-size: 1rem;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-width: 480px) {
+  /* Styles */
 }
 
-.flex-container {
-  background-color: hsl(30, 38%, 92%);
-  display: block;
-  text-align: center;
+@media only screen and (min-width: 1224px) and (max-width: 1440px) {
+  /* Styles */
 }
-.product {
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+  display: flex;
+  margin: 200px 450px;
+}
+
+.perfume-image {
+  width: 450px;
+  height: 460px;
+  border-radius: 0.6rem 0rem 0rem 0.6rem;
+}
+
+.product-text {
+  background-color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  border-radius: 0rem 0.6rem 0.6rem 0rem;
+  padding: 1.25rem 1.875rem 1.25rem 1.875rem;
+  width: 425px;
+  height: 460px;
+}
+
+.product-item {
   text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 p {
@@ -118,4 +138,35 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+}
+.price {
+  margin-bottom: 20px;
+}
+.newprice {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
+}
+
+.oldprice {
+  padding-left: 10px;
+  vertical-align: super;
+}
+
+.purchase {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border-radius: 0.6rem;
+  width: 100%;
+}
+
+.buy {
+  display: block;
+}
+
+.icon-cart {
+  display: flex;
+  vertical-align: text-top;
 }
