@@ -103,7 +103,7 @@ body {
 
 .container {
   display: flex;
-  margin: 200px 450px;
+  margin: 150px 450px;
 }
 
 .perfume-image {
@@ -139,6 +139,7 @@ h1 {
   font-weight: 700;
   font-style: normal;
 }
+
 .price {
   margin-bottom: 20px;
 }
@@ -153,6 +154,13 @@ h1 {
   vertical-align: super;
 }
 
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  padding: 10px 30px;
+}
 .purchase {
   background-color: hsl(158, 36%, 37%);
   color: hsl(0, 0%, 100%);
@@ -160,13 +168,4 @@ h1 {
   font-weight: bold;
   border-radius: 0.6rem;
   width: 100%;
-}
-
-.buy {
-  display: block;
-}
-
-.icon-cart {
-  display: flex;
-  vertical-align: text-top;
 }
